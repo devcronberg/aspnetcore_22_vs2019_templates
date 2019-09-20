@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link asp-append-version="true" href="~/styles/app.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>@ViewBag.Header</h1>
+    <script asp-append-version="true" src="~/scripts/app.js"></script>
+    <environment names="Staging,Production">
+        <script src="~/lib/jquery/jquery.min.js"></script>
+    </environment>
+    <environment names="Development">
+        <script src="~/lib/jquery/jquery.js"></script>
+    </environment>
+</body>
+</html>
